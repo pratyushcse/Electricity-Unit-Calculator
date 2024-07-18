@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Electricity Unit Calculator</h1>
+        <div class="input-group">
+            <label for="old_units">Enter units used in the previous bill:</label>
+            <input type="text" id="old_units">
+        </div>
+        <div class="input-group">
+            <label for="present_units">Enter the current unit in the meter:</label>
+            <input type="text" id="present_units">
+        </div>
+        <div class="input-group">
+            <label for="days_left">Enter the days left for the next bill:</label>
+            <input type="text" id="days_left">
+        </div>
+        <div class="input-group">
+            <label for="unit_limit">Enter the free unit limit to use:</label>
+            <input type="text" id="unit_limit">
+        </div>
+        <button onclick="calculateUnits()">Calculate</button>
+        <div id="result"></div>
+    </div>
+    <footer>
+        <p>&copy;Copyright 2024. <br>All rights reserved. Developed by Pratyush</p>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
